@@ -13,8 +13,8 @@ bin           = @["colourfinder"]
 
 requires "nim >= 1.2.2"
 requires "nimPNG"
-requires "color_distance"
 requires "yaml"
+requires "https://github.com/pietroppeter/color_distance"
 
 task createlist, "Create the list of accepted colours":
   exec "nim c -d:release -d:danger -r findcolours.nim"
